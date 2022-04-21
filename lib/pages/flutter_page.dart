@@ -70,14 +70,14 @@ class _FlutterPageState extends State<FlutterPage> {
             "- Released in 2017",
             style: Theme.of(context).textTheme.headline4,
           ),
-          Text(
-            "- No Hot Reload",
-            style: Theme.of(context).textTheme.headline4,
-          ),
           // Text(
-          //   "- Hot Reload",
+          //   "- No Hot Reload",
           //   style: Theme.of(context).textTheme.headline4,
           // ),
+          Text(
+            "- Hot Reload",
+            style: Theme.of(context).textTheme.headline4,
+          ),
         ],
       ),
     ];

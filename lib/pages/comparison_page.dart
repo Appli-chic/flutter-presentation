@@ -12,11 +12,18 @@ class _ComparisonPageState extends State<ComparisonPage> {
   @override
   Widget build(BuildContext context) {
     return CommonPage(
-      desktopBody: _desktopBody(),
-      mobileBody: _mobileBody(),
+      desktopBody: _body(),
+      mobileBody: _body(),
     );
   }
 
+  Widget _body() {
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [],
+    );
+  }
 
   Widget _desktopBody() {
     return Row(
