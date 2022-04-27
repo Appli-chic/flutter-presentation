@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_highlighter/flutter_highlighter.dart';
 import 'package:flutter_highlighter/themes/github.dart';
+import 'package:flutter_presentation/routes.dart';
 
 import '../common/common_page.dart';
 
@@ -15,7 +16,7 @@ class _ExampleCreditCardPageState extends State<ExampleCreditCardPage> {
   @override
   Widget build(BuildContext context) {
     return CommonPage(
-      // nextPageRoute: exampleCreditCardPageRoute,
+      nextPageRoute: exampleStatePageRoute,
       desktopBody: _desktopBody(),
       mobileBody: _mobileBody(),
     );
