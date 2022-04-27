@@ -3,6 +3,8 @@ import 'package:flutter_highlighter/flutter_highlighter.dart';
 import 'package:flutter_highlighter/themes/github.dart';
 import 'package:flutter_presentation/common/common_page.dart';
 
+import '../routes.dart';
+
 const colors = [
   Colors.purple,
   Colors.green,
@@ -26,7 +28,7 @@ class _ExampleStatePageState extends State<ExampleStatePage> {
   @override
   Widget build(BuildContext context) {
     return CommonPage(
-      // nextPageRoute: exampleStatePageRoute,
+      nextPageRoute: exampleShowcaseRoute,
       desktopBody: _desktopBody(),
       mobileBody: _mobileBody(),
     );

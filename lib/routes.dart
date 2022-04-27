@@ -7,6 +7,7 @@ import 'package:flutter_presentation/pages/example_state_page.dart';
 import 'package:flutter_presentation/pages/flutter_page.dart';
 import 'package:flutter_presentation/pages/home_page.dart';
 import 'package:flutter_presentation/pages/react_native_page.dart';
+import 'package:flutter_presentation/pages/showcase_page.dart';
 
 const homePageRoute = "/";
 const flutterPageRoute = "/flutter";
@@ -16,6 +17,7 @@ const reactNativePageRoute = "/react_native";
 const comparisonPageRoute = "/comparison";
 const exampleCreditCardPageRoute = "/example_credit_card";
 const exampleStatePageRoute = "/example_state";
+const exampleShowcaseRoute = "/show_case";
 
 PageRouteBuilder? createRoutes(settings) {
   switch (settings.name) {
@@ -35,6 +37,8 @@ PageRouteBuilder? createRoutes(settings) {
       return createRoute(const ExampleCreditCardPage());
     case exampleStatePageRoute:
       return createRoute(const ExampleStatePage());
+    case exampleShowcaseRoute:
+      return createRoute(const ShowcasePage());
   }
   return null;
 }
