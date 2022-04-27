@@ -62,6 +62,13 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  flutter_highlighter:
+    dependency: "direct main"
+    description:
+      name: flutter_highlighter
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.1.1"
   flutter_lints:
     dependency: "direct dev"
     description:
@@ -74,6 +81,13 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  highlighter:
+    dependency: transitive
+    description:
+      name: highlighter
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.1.1"
   lints:
     dependency: transitive
     description:

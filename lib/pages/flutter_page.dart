@@ -70,6 +70,10 @@ class _FlutterPageState extends State<FlutterPage> {
             "- Released in 2017",
             style: Theme.of(context).textTheme.headline4,
           ),
+          Text(
+            "- Similar to React",
+            style: Theme.of(context).textTheme.headline4,
+          ),
           // Text(
           //   "- No Hot Reload",
           //   style: Theme.of(context).textTheme.headline4,

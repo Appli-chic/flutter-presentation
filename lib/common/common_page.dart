@@ -59,6 +59,7 @@ class _CommonPageState extends State<CommonPage> {
         );
       } else {
         return Container(
+          width: double.maxFinite,
           margin: const EdgeInsets.all(16),
           child: SingleChildScrollView(
             child: widget.mobileBody,

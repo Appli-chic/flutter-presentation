@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter_presentation/pages/comparison_page.dart';
 import 'package:flutter_presentation/pages/cordova_page.dart';
 import 'package:flutter_presentation/pages/dart_page.dart';
+import 'package:flutter_presentation/pages/example_credit_card_page.dart';
 import 'package:flutter_presentation/pages/flutter_page.dart';
 import 'package:flutter_presentation/pages/home_page.dart';
 import 'package:flutter_presentation/pages/react_native_page.dart';
@@ -12,6 +13,7 @@ const dartPageRoute = "/dart";
 const cordovaPageRoute = "/cordova";
 const reactNativePageRoute = "/react_native";
 const comparisonPageRoute = "/comparison";
+const exampleCreditCardPageRoute = "/example_credit_card";
 
 PageRouteBuilder? createRoutes(settings) {
   switch (settings.name) {
@@ -27,6 +29,8 @@ PageRouteBuilder? createRoutes(settings) {
       return createRoute(const ReactNativePage());
     case comparisonPageRoute:
       return createRoute(const ComparisonPage());
+    case exampleCreditCardPageRoute:
+      return createRoute(const ExampleCreditCardPage());
   }
   return null;
 }

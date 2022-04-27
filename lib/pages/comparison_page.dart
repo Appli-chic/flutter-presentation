@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_presentation/common/common_page.dart';
+import 'package:flutter_presentation/routes.dart';
 
 class ComparisonPage extends StatefulWidget {
   const ComparisonPage({Key? key}) : super(key: key);
@@ -12,6 +13,7 @@ class _ComparisonPageState extends State<ComparisonPage> {
   @override
   Widget build(BuildContext context) {
     return CommonPage(
+      nextPageRoute: exampleCreditCardPageRoute,
       desktopBody: _desktopBody(),
       mobileBody: _mobileBody(),
     );
@@ -110,11 +112,11 @@ class _ComparisonPageState extends State<ComparisonPage> {
           style: Theme.of(context).textTheme.headline5,
         ),
         Text(
-          "- Good performance",
+          "- Good performances",
           style: Theme.of(context).textTheme.headline5,
         ),
         Text(
-          "- Depend on the native API",
+          "- Rely on the native API",
           style: Theme.of(context).textTheme.headline5,
         ),
         Text(
@@ -142,7 +144,7 @@ class _ComparisonPageState extends State<ComparisonPage> {
           style: Theme.of(context).textTheme.headline5,
         ),
         Text(
-          "- Good performance",
+          "- Good performances",
           style: Theme.of(context).textTheme.headline5,
         ),
         Text(
