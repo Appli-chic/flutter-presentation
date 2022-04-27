@@ -17,12 +17,27 @@ class _ComparisonPageState extends State<ComparisonPage> {
     );
   }
 
-
   Widget _desktopBody() {
-    return Row(
+    return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.center,
-      children: [],
+      children: [
+        ClipRRect(
+          borderRadius: BorderRadius.circular(8.0),
+          child: Image.asset('assets/images/comparison_illustration.png'),
+        ),
+        Container(
+          margin: const EdgeInsets.only(top: 16),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: [
+              _displayCordova(),
+              _displayReactNative(),
+              _displayFlutter(),
+            ],
+          ),
+        ),
+      ],
     );
   }
 
@@ -30,7 +45,119 @@ class _ComparisonPageState extends State<ComparisonPage> {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.start,
-      children: [],
+      children: [
+        ClipRRect(
+          borderRadius: BorderRadius.circular(8.0),
+          child: Image.asset('assets/images/comparison_illustration.png'),
+        ),
+        Container(
+          margin: const EdgeInsets.only(top: 16),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: [
+              _displayCordova(),
+              _displayReactNative(),
+              _displayFlutter(),
+            ],
+          ),
+        ),
+      ],
+    );
+  }
+
+  Widget _displayCordova() {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(
+          "Cordova",
+          style: Theme.of(context).textTheme.headline2,
+        ),
+        Text(
+          "- Webview + Bridges",
+          style: Theme.of(context).textTheme.headline5,
+        ),
+        Text(
+          "- Bad performances",
+          style: Theme.of(context).textTheme.headline5,
+        ),
+        Text(
+          "- Doesn’t rely on the native API",
+          style: Theme.of(context).textTheme.headline5,
+        ),
+        Text(
+          "- Bridge with native code",
+          style: Theme.of(context).textTheme.headline5,
+        ),
+        Text(
+          "- Stars 390",
+          style: Theme.of(context).textTheme.headline5,
+        ),
+      ],
+    );
+  }
+
+  Widget _displayReactNative() {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(
+          "React Native",
+          style: Theme.of(context).textTheme.headline2,
+        ),
+        Text(
+          "- Translate React in native views",
+          style: Theme.of(context).textTheme.headline5,
+        ),
+        Text(
+          "- Good performance",
+          style: Theme.of(context).textTheme.headline5,
+        ),
+        Text(
+          "- Depend on the native API",
+          style: Theme.of(context).textTheme.headline5,
+        ),
+        Text(
+          "- Bridge with native code",
+          style: Theme.of(context).textTheme.headline5,
+        ),
+        Text(
+          "- #31 - Stars 102 000",
+          style: Theme.of(context).textTheme.headline5,
+        ),
+      ],
+    );
+  }
+
+  Widget _displayFlutter() {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(
+          "Flutter",
+          style: Theme.of(context).textTheme.headline2,
+        ),
+        Text(
+          "- Rendering engine Skia",
+          style: Theme.of(context).textTheme.headline5,
+        ),
+        Text(
+          "- Good performance",
+          style: Theme.of(context).textTheme.headline5,
+        ),
+        Text(
+          "- Doesn’t rely on the native API",
+          style: Theme.of(context).textTheme.headline5,
+        ),
+        Text(
+          "- Bridge with native code",
+          style: Theme.of(context).textTheme.headline5,
+        ),
+        Text(
+          "- #18 - Stars 139 000",
+          style: Theme.of(context).textTheme.headline5,
+        ),
+      ],
     );
   }
 }

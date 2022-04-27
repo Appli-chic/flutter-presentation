@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_presentation/routes.dart';
 
 import '../common/common_page.dart';
 
@@ -13,6 +14,7 @@ class _ReactNativePageState extends State<ReactNativePage> {
   @override
   Widget build(BuildContext context) {
     return CommonPage(
+      nextPageRoute: comparisonPageRoute,
       desktopBody: _desktopBody(),
       mobileBody: _mobileBody(),
     );

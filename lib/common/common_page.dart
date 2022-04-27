@@ -49,7 +49,7 @@ class _CommonPageState extends State<CommonPage> {
   }
 
   Widget _body() {
-    if (MediaQuery.of(context).size.width > 1400) {
+    if (MediaQuery.of(context).size.width > 1300) {
       return widget.desktopBody;
     } else {
       if (widget.isCentered) {
