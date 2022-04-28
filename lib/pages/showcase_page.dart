@@ -45,6 +45,7 @@ class _ShowcasePageState extends State<ShowcasePage> {
       _buildItem("Stadia", "assets/images/stadia.png", "https://flutter.dev/showcase/stadia"),
       _buildItem("Rive", "assets/images/rive.png", "https://rive.app"),
       _buildItem("Rows", "assets/images/rows.png", "https://rows.com"),
+      _buildItem("SNCF", "assets/images/sncf.jpeg", "https://play.google.com/store/apps/details?id=com.vsct.vsc.mobile.horaireetresa.android&hl=fr&gl=US"),
       _buildItem("Chic Secret", "assets/images/chic_secret.png", "https://chic-secret.com"),
     ];
   }
